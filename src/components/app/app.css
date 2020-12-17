@@ -1,0 +1,16 @@
+html {
+    background-color: rgba(181, 236, 231, 0.69);
+    height: 100vh;
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+}
