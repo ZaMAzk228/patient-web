@@ -1,70 +1,22 @@
-.register__wrap-gender {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 38px;
-  }
-  
-  .form-wrap {
-    width: 200px;
-    height: 70px;
-    color: #2A52BE; 
-  }
-  
-  .form-wrap:last-child {
-    padding-bottom: 0;
-  }
-  
-  .form-label {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 45px;
-  }
-  
-  .form-input {
-    display: none;
+.intro__register {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 200px;
+}
 
-  }
-  
-  .form--radio-btn {
-    display: block;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border: 3px solid #A0BFFA;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .form--radio-btn:after {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    background-color: rgba(65, 206, 88, 0.5);
-    border-radius: 50%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-  }
-  
-  input:checked ~ .form--radio-btn:after {
-    opacity: 1;
-  }
+.register__return-btn {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
 
-  .intro__register{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 200px;
+.register__return-btn img {
+  width: 40px;
+  height: 40px;
 }
 
 .register__form-wrap {
@@ -78,44 +30,121 @@
 }
 
 .register__form-text{
-    cursor: pointer;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 56px;
-    color: #2A52BE
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 35px;
+  color: #2A52BE
 }
 
 .register__form-input {
-    display: flex;
-    width: 600px;
-    box-sizing: border-box;
-    height: 70px;
-    border: none;
-    outline: none;
-    font-size: 25px;
-    padding-left: 40px;
-    background: #FFFFFF;
-    border-radius: 30px;
-    margin-top: 25px;
+  display: flex;
+  width: 600px;
+  box-sizing: border-box;
+  height: 70px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  padding-left: 40px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+
+.register__wrap-gender {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 38px;
+}
+  
+.form-wrap {
+  width: 200px;
+  height: 70px;
+  color: #2A52BE; 
+}
+  
+.form-wrap:last-child {
+  padding-bottom: 0;
+}
+  
+.form-label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 35px;
+}
+
+.form-input {
+  display: none;
+}
+  
+.form--radio-btn {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #A0BFFA;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.form--radio-btn:after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(65, 206, 88, 0.5);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+input:checked ~ .form--radio-btn:after {
+  opacity: 1;
 }
 
 .register__link{
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 400px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 20px; 
-    color: #ffffff;
-    background-color:#A0BFFA;
-    font-size: 38px;
-    line-height: 38px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 400px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px; 
+  color: #ffffff;
+  background-color:#A0BFFA;
+  font-size: 38px;
+  line-height: 38px;
+}
+
+@media (max-width: 1366px) {
+  .intro__register {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register__return-btn {
+    left: 15px;
+    top: 20px;
+  }
+
+  .register__return-btn img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media(max-width: 700px)  {

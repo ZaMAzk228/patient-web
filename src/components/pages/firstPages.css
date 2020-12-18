@@ -6,7 +6,7 @@
   align-items: center	;
   padding-left: 80px;
   padding-right: 80px;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .firstPages__content-wrapper{
@@ -47,6 +47,10 @@
 }
 
 @media(max-width:1100px){
+  .firstPages__wrapper {
+    margin-top: 50px;
+  }
+
   .firstPages__img{
     display: none;
   }

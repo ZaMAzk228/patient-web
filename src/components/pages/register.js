@@ -6,6 +6,9 @@ import './register.css';
 const Register = () => {
     return (
         <div className=" intro__register">
+            <Link to="/" className="register__return-btn" >
+                <img src="../../../assets/svg/returnBtnLeft.svg" />
+            </Link>
             <div className="register__form-wrap">
                 <label className="register__form-text" htmlFor="register__email">Фамилия</label>
                 <input className="register__form-input" type="email" required placeholder="Иванов" id="register__email" />

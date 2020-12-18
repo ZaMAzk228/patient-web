@@ -6,6 +6,9 @@ import './login.css';
 const Login = () => {
     return (
         <div className="login__wrapper">
+            <Link to="/" className="login__return-btn" >
+                <img src="../../../assets/svg/returnBtnLeft.svg" />
+            </Link>
             <div className="login__form-wrap">
                 <label className="login__form-text" htmlFor="login__email" >Почта</label>
                 <input className="login__form-input" type="email" required placeholder="example@mail.com" id="login__email" />
