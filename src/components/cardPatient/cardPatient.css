@@ -1,0 +1,168 @@
+*{
+  border:0;
+  margin:0;
+}
+.cardPatient__wrapper {
+  width: 100%;
+  height: 250px;
+  background-color: #A0BFFA;
+  position: relative;
+  border-radius: 40px;
+  margin-bottom: 33px;
+}
+
+.cardPatient__wrapper:last-of-type {
+  margin-bottom: 78px;
+}
+
+.cardPatient__time {
+  position: absolute;
+  width: 320px;
+  height: 132px;
+  top: 15px;
+  left: 20px;
+}
+
+.cardPatient__title {
+  font-size: 35px;
+  line-height: 35px;
+  display: block;
+  color: #2A52BE;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-right: 15px; 
+}
+
+.cardPatient__value {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.cardPatient__kabinet {
+  position: absolute;
+  bottom: 15px; 
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.cardPatient__doctor {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  display:flex;
+  flex-direction: row;
+}
+
+.cardPatient__doctor .cardPatient__value {
+  margin-right: 5px;
+}
+
+.cardPatient__btn {
+  position: absolute;
+  bottom: 22px;
+  right: 70px;
+  width: 350px;
+  height: 100px;
+  background-color: #E83548;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 40px;
+}
+
+@media (max-width: 768px) {
+  .cardPatient__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .cardPatient__value {
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .cardPatient__btn {
+    right: 20px;
+    width: 260px;
+    height: 60px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .cardPatient__doctor {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .cardPatient__doctor .cardPatient__value {
+    margin-right: 0;
+  }
+
+  .cardPatient__wrapper:last-of-type {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 510px) {
+  .cardPatient__wrapper {
+    height: 270px;
+  }
+
+  .cardPatient__btn {
+    width: 150px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cardPatient__wrapper {
+    height: 200px;
+  }
+
+  .cardPatient__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .cardPatient__value {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .cardPatient__kabinet {
+    bottom: 15px;
+    left: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .cardPatient__time {
+    top: 15px;
+    left: 10px;
+    max-width: 150px;
+  }
+
+  .cardPatient__doctor {
+    top: 15px;
+    right: 10px;
+  }
+
+  .cardPatient__btn {
+    right: 10px;
+    bottom: 15px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

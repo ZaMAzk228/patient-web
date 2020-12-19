@@ -62,12 +62,17 @@
   height: 80px;
   width: 29.28%;
   text-align: center;
-  text-decoration: none;
+  border: none;
+  outline: none;
   border-radius: 20px; 
   color: #ffffff;
-  background-color:#A0BFFA;
+  background-color:rgba(160, 191, 250, 0.5);
   font-size: 38px;
   line-height: 38px;
+}
+
+.login__link-active {
+  background-color: #A0BFFA;
 }
 
 @media (max-width: 1366px) {

@@ -3,7 +3,8 @@ import {Switch, Route} from 'react-router-dom';
 
 import './app.css';
 
-import {FirstPages,Register, Login,Priem} from '../pages';
+import { FirstPages, Login, PatientPage, DoctorPage } from '../pages';
+import RegisterNavigatorPage from '../RegisterNavigation';
 
 const App = () => {
   return (
@@ -12,9 +13,10 @@ const App = () => {
         <div className="wrapper">
           <Switch>
             <Route exact path="/" component={FirstPages}/>
-            <Route path="/register" component={Register}/>
+            <Route path="/register" component={RegisterNavigatorPage}/>
             <Route path="/login" component={Login}/>
-            <Route path="/priem" component={Priem}/>
+            <Route path="/timetable" component={PatientPage} />
+            <Route path="/doctorsTimetable" component={DoctorPage} />
           </Switch>
         </div>
       </div>

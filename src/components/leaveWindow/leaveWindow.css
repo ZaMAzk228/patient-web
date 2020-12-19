@@ -1,0 +1,66 @@
+.leave__container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.leave__wrapper-content {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #A0BFFA;
+  border-radius: 40px;
+  margin-bottom: 70px;
+}            
+
+.leave__text {
+  text-align: center;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+}
+
+.leave__btns {
+  width: 100%;
+  height: 88px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leave__btn {
+  width: 300px;
+  height: 88px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-radius: 40px;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.leave__btn-green{
+  background-color: #41CE58;
+}
+
+.leave__btn-red{
+  background-color: #E83548;
+}
+
+@media (max-width: 768px) {
+  .leave__text {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .leave__btn {
+    width: 42%;
+  }
+}

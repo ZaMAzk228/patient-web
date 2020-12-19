@@ -1,11 +1,15 @@
 import FirstPages from './firstPages';
-import Register from './register';
+import RegisterFirstStep from './registerFirstStep';
+import RegisterSecondStep from './registerSecondStep';
 import Login from './login';
-import Priem from './priem';
+import PatientPage from './patientPage';
+import DoctorPage from './doctorPage';
 
 export {
   FirstPages,
-  Register,
+  RegisterFirstStep,
+  RegisterSecondStep,
   Login,
-  Priem
+  PatientPage,
+  DoctorPage
 };

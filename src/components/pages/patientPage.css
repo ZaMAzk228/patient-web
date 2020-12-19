@@ -1,0 +1,102 @@
+.patientPage__wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 140px 33px 0 33px;
+}
+
+.patientPage__icon-return--wrap { 
+  background-color: transparent;
+  position: absolute;
+  border: none;
+  outline: none;
+  right: 40px;
+  top: 60px;
+}
+
+.patientPage__icon-return--wrap img {
+  width: 60px;
+  height: 60px;
+}
+
+.patientPage__btn {
+  width: 600px;
+  height: 80px;
+  background-color: #A0BFFA;
+  border-radius: 20px;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 140px;
+  color: #ffffff;
+}
+
+.modal__wrap {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.modal__wrap-black {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__wrap__container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1366px) {
+  .modal__wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .patientPage__wrapper {
+    padding: 100px 15px 0 15px;
+  }
+
+  .patientPage__btn {
+    width: 80%;
+  }
+
+  .patientPage__icon-return--wrap {
+    top: 20px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .patientPage__wrapper {
+    padding-top: 70px;
+  }
+  
+  .patientPage__icon-return--wrap {
+    right: 0; 
+  }
+
+  .patientPage__icon-return--wrap img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .patientPage__btn {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
